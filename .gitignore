@@ -1,0 +1,5 @@
+# Artefactos locales del workshop: nada de esto pertenece al vault.
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
