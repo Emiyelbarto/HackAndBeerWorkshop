@@ -1,0 +1,165 @@
+# Arbol del Directorio RH.
+dn: ou=employees,dc=hackandbeer,dc=local
+objectClass: organizationalUnit
+ou: employees
+description: Directorio de personal de HackAndBeer Corp
+
+dn: uid=mrivera,ou=employees,dc=hackandbeer,dc=local
+objectClass: inetOrgPerson
+uid: mrivera
+cn: Maria Rivera
+sn: Rivera
+mail: mrivera@hackandbeer.local
+title: Analista de Seguridad
+departmentNumber: Seguridad
+description: Monitoreo del SOC en turno matutino
+
+dn: uid=jlopez,ou=employees,dc=hackandbeer,dc=local
+objectClass: inetOrgPerson
+uid: jlopez
+cn: Jorge Lopez
+sn: Lopez
+mail: jlopez@hackandbeer.local
+title: Ingeniero de Redes
+departmentNumber: Infraestructura
+description: Responsable del enrutamiento entre sitios
+
+dn: uid=acastro,ou=employees,dc=hackandbeer,dc=local
+objectClass: inetOrgPerson
+uid: acastro
+cn: Ana Castro
+sn: Castro
+mail: acastro@hackandbeer.local
+title: Gerente de Recursos Humanos
+departmentNumber: Recursos Humanos
+description: Duena del proceso de contratacion
+
+dn: uid=dmoreno,ou=employees,dc=hackandbeer,dc=local
+objectClass: inetOrgPerson
+uid: dmoreno
+cn: Diego Moreno
+sn: Moreno
+mail: dmoreno@hackandbeer.local
+title: Desarrollador Backend
+departmentNumber: Ingenieria
+description: Mantiene la API de facturacion
+
+dn: uid=lsalazar,ou=employees,dc=hackandbeer,dc=local
+objectClass: inetOrgPerson
+uid: lsalazar
+cn: Laura Salazar
+sn: Salazar
+mail: lsalazar@hackandbeer.local
+title: Disenadora UX
+departmentNumber: Producto
+description: Investigacion de usuarios del portal
+
+dn: uid=rvega,ou=employees,dc=hackandbeer,dc=local
+objectClass: inetOrgPerson
+uid: rvega
+cn: Ricardo Vega
+sn: Vega
+mail: rvega@hackandbeer.local
+title: Administrador de Base de Datos
+departmentNumber: Infraestructura
+description: Respaldos y replicacion de datos
+
+dn: uid=cgarza,ou=employees,dc=hackandbeer,dc=local
+objectClass: inetOrgPerson
+uid: cgarza
+cn: Carla Garza
+sn: Garza
+mail: cgarza@hackandbeer.local
+title: Contadora General
+departmentNumber: Finanzas
+description: Cierre contable mensual
+
+dn: uid=fnunez,ou=employees,dc=hackandbeer,dc=local
+objectClass: inetOrgPerson
+uid: fnunez
+cn: Fernando Nunez
+sn: Nunez
+mail: fnunez@hackandbeer.local
+title: Soporte Tecnico Nivel 2
+departmentNumber: Mesa de Ayuda
+description: Atiende incidentes de estaciones de trabajo
+
+dn: uid=ptorres,ou=employees,dc=hackandbeer,dc=local
+objectClass: inetOrgPerson
+uid: ptorres
+cn: Patricia Torres
+sn: Torres
+mail: ptorres@hackandbeer.local
+title: Reclutadora Tecnica
+departmentNumber: Recursos Humanos
+description: Pipeline de vacantes de ingenieria
+
+dn: uid=hmendez,ou=employees,dc=hackandbeer,dc=local
+objectClass: inetOrgPerson
+uid: hmendez
+cn: Hugo Mendez
+sn: Mendez
+mail: hmendez@hackandbeer.local
+title: Pentester Senior
+departmentNumber: Seguridad
+description: Pruebas de intrusion internas y externas
+
+dn: uid=svaldez,ou=employees,dc=hackandbeer,dc=local
+objectClass: inetOrgPerson
+uid: svaldez
+cn: Sofia Valdez
+sn: Valdez
+mail: svaldez@hackandbeer.local
+title: Gerente de Producto
+departmentNumber: Producto
+description: Prioriza el roadmap trimestral
+
+dn: uid=emontes,ou=employees,dc=hackandbeer,dc=local
+objectClass: inetOrgPerson
+uid: emontes
+cn: Emilio Montes
+sn: Montes
+mail: emontes@hackandbeer.local
+title: Arquitecto de Software
+departmentNumber: Ingenieria
+description: Define los contratos entre servicios
+
+dn: uid=naranda,ou=employees,dc=hackandbeer,dc=local
+objectClass: inetOrgPerson
+uid: naranda
+cn: Nadia Aranda
+sn: Aranda
+mail: naranda@hackandbeer.local
+title: Abogada Corporativa
+departmentNumber: Legal
+description: Revision de contratos con proveedores
+
+dn: uid=tibarra,ou=employees,dc=hackandbeer,dc=local
+objectClass: inetOrgPerson
+uid: tibarra
+cn: Tomas Ibarra
+sn: Ibarra
+mail: tibarra@hackandbeer.local
+title: Analista Financiero
+departmentNumber: Finanzas
+description: Proyecciones de flujo de efectivo
+
+dn: uid=bquezada,ou=employees,dc=hackandbeer,dc=local
+objectClass: inetOrgPerson
+uid: bquezada
+cn: Beatriz Quezada
+sn: Quezada
+mail: bquezada@hackandbeer.local
+title: Directora de Operaciones
+departmentNumber: Operaciones
+description: Coordina las tres plantas de la region
+
+dn: uid=svc-backup,ou=employees,dc=hackandbeer,dc=local
+objectClass: inetOrgPerson
+uid: svc-backup
+cn: Servicio de Respaldo
+sn: Respaldo
+mail: svc-backup@hackandbeer.local
+title: Cuenta de servicio automatizada
+departmentNumber: Internal
+description: H&B{ld4p_f1lt3r_1nj3ct10n}

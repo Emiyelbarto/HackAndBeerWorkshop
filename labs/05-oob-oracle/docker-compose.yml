@@ -1,0 +1,23 @@
+services:
+  lab05_web:
+    build: ./app
+    container_name: lab05_web
+    # Solo loopback del host: el lab nunca se expone a la red.
+    ports:
+      - "127.0.0.1:8005:8000"
+    # Necesario para que el contenedor alcance el listener del atacante en Linux.
+    # En Docker Desktop (macOS y Windows) host.docker.internal ya existe.
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "--silent", "http://127.0.0.1:8000/health"]
+      interval: 3s
+      timeout: 2s
+      retries: 15
+      start_period: 3s
+    networks:
+      - lab05_net
+
+networks:
+  lab05_net:
+    name: lab05_net
