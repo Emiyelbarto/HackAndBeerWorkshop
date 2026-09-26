@@ -44,15 +44,13 @@ small { color: #8fa3b5; }
 <body>
 <main>
 <h1>NOC Diagnostics :: verificacion de enlace</h1>
-<p>Encola una prueba ICMP contra un host del backbone. El resultado se entrega al
-sistema de tickets, no a esta pantalla.</p>
+<p>NOC Resolves hosts in internal network. For Internal Use Only.</p>
 <form id="diag">
   <input id="host" name="host" value="10.20.0.1" autocomplete="off">
-  <button type="submit">Encolar diagnostico</button>
+  <button type="submit">Task job</button>
 </form>
-<pre id="out">esperando...</pre>
-<small>Los resultados de ICMP se archivan en el ticket. Esta vista solo confirma
-el encolado.</small>
+<pre id="out">Waiting...</pre>
+<small>Los resultados de ICMP se archivan en el ticket.</small>
 </main>
 <script>
 document.getElementById('diag').addEventListener('submit', async (e) => {

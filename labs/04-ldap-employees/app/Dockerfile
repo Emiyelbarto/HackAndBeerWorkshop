@@ -9,7 +9,6 @@ RUN pip install --no-cache-dir -r /app/requirements.txt
 COPY gateway.py /app/gateway.py
 COPY healthcheck.py /app/healthcheck.py
 
-# El codigo va dentro de la imagen, sin volumenes desde el host.
 RUN useradd --create-home --shell /usr/sbin/nologin gateway
 USER gateway
 
