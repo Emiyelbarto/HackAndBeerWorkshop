@@ -1,0 +1,6 @@
+include:
+  - path: labs/01-newspaper/docker-compose.yml
+  - path: labs/02-street-finder/docker-compose.yml
+  - path: labs/03-blind-sqli/docker-compose.yml
+  - path: labs/04-ldap-employees/docker-compose.yml
+  - path: labs/05-oob-oracle/docker-compose.yml
