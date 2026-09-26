@@ -1,0 +1,51 @@
+# Lab 04: Directorio RH. Dos servicios, un solo puerto publicado en 127.0.0.1.
+services:
+  lab04_directory:
+    build:
+      context: ./directory
+    container_name: lab04_directory
+    networks:
+      - lab04_net
+    # Sin ports: el directorio LDAP solo existe dentro de la red del compose.
+    healthcheck:
+      test:
+        - CMD
+        - ldapsearch
+        - -x
+        - -H
+        - ldap://127.0.0.1:389
+        - -b
+        - dc=hackandbeer,dc=local
+        - -s
+        - base
+        - (objectClass=*)
+        - dn
+      interval: 2s
+      timeout: 5s
+      retries: 30
+      start_period: 2s
+
+  lab04_gateway:
+    build:
+      context: ./app
+    container_name: lab04_gateway
+    environment:
+      DIRECTORY_HOST: lab04_directory
+      DIRECTORY_PORT: "389"
+    ports:
+      - "127.0.0.1:1389:1389"
+    networks:
+      - lab04_net
+    depends_on:
+      lab04_directory:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python3", "/app/healthcheck.py"]
+      interval: 2s
+      timeout: 5s
+      retries: 30
+      start_period: 2s
+
+networks:
+  lab04_net:
+    name: lab04_net

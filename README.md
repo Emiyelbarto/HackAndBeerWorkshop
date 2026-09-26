@@ -62,21 +62,14 @@ Tambien puedes levantar un solo lab entrando a su carpeta y corriendo ahi `docke
 
 | Lab | Tema | Vulnerabilidad | Puerto | Lo que aprendes a programar |
 |-----|------|----------------|--------|-----------------------------|
-| [[labs/01-newspaper/README\|01]] | El Nacido de la Bruma | IDOR mas paginacion incompleta | 8001 | Loops, parsing con regex, diferencia de conjuntos, hilos |
-| [[labs/02-street-finder/README\|02]] | Callejero Municipal | Inyeccion XPath sobre backend XML | 8002 | Oraculo booleano, descubrimiento de estructura, busqueda binaria |
-| [[labs/03-blind-sqli/README\|03]] | Almacen Central | Blind SQLi en MySQL con WAF y rate limit | 8003 | Bypass de lista negra, pacing adaptativo, reintento sobre 429 |
-| [[labs/04-ldap-employees/README\|04]] | Directorio RH | Inyeccion de filtro LDAP | 1389 | Sockets crudos, protocolo que no es HTTP |
-| [[labs/05-oob-oracle/README\|05]] | NOC Diagnostics | Inyeccion de comandos ciega fuera de banda | 8005 | Listener propio, hilos, correlacion con nonces |
+| [[labs/01-newspaper/]] | El Nacido de la Bruma | IDOR mas paginacion incompleta | 8001 | Loops, parsing con regex, diferencia de conjuntos, hilos |
+| [[labs/02-street-finder/]] | Callejero Municipal | Inyeccion XPath sobre backend XML | 8002 | Oraculo booleano, descubrimiento de estructura, busqueda binaria |
+| [[labs/03-blind-sqli/]] | Almacen Central | Blind SQLi en MySQL con WAF y rate limit | 8003 | Bypass de lista negra, pacing adaptativo, reintento sobre 429 |
+| [[labs/04-ldap-employees/]] | Directorio RH | Inyeccion de filtro LDAP | 1389 | Sockets crudos, protocolo que no es HTTP |
+| [[labs/05-oob-oracle/]] | NOC Diagnostics | Inyeccion de comandos ciega fuera de banda | 8005 | Listener propio, hilos, correlacion con nonces |
 
 ## Puertos y flags
 
 Los cinco labs residen en `127.0.0.1` unicamente. Las bases de datos y el directorio LDAP viven en la red interna de Docker y no se exponen al host y lo más importante: Todos los flags tienen el formato `H&B{...}`. 
-
-## Verificar que los labs funcionan
-
-```bash
-docker compose up -d --build
-pytest labs
-```
 
 Los labs son deliberadamente vulnerables. Escuchan solo en loopback y no hablan con internet pero tampoco los expongas en una red compartida, no los subas a un VPS y sobre todo, no reutilices este codigo en produccion. Lo que aprendes aqui se aplica unicamente sobre sistemas para los que tengas autorizacion escrita y legal.

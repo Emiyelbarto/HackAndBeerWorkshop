@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Callejero Municipal - base de datos sintetica de vias publicas -->
+<city>
+  <meta>
+    <title>Callejero Municipal</title>
+    <version>3.1.0</version>
+    <updated>2026-09-01</updated>
+    <records>40</records>
+  </meta>
+  <streets>
+    <street id="1"><name>Avenida Reforma Norte</name><neighborhood>Centro</neighborhood><postal_code>01000</postal_code><road_type>avenida</road_type></street>
+    <street id="2"><name>Calle Morelos</name><neighborhood>Centro</neighborhood><postal_code>01000</postal_code><road_type>calle</road_type></street>
+    <street id="3"><name>Calzada de los Cipreses</name><neighborhood>Jardines</neighborhood><postal_code>01010</postal_code><road_type>calzada</road_type></street>
+    <street id="4"><name>Privada San Lorenzo</name><neighborhood>San Lorenzo</neighborhood><postal_code>01020</postal_code><road_type>privada</road_type></street>
+    <street id="5"><name>Boulevard Industrial</name><neighborhood>Parque Norte</neighborhood><postal_code>01030</postal_code><road_type>boulevard</road_type></street>
+    <street id="6"><name>Calle Benito Juarez</name><neighborhood>Centro</neighborhood><postal_code>01000</postal_code><road_type>calle</road_type></street>
+    <street id="7"><name>Avenida del Trabajo</name><neighborhood>Obrera</neighborhood><postal_code>01040</postal_code><road_type>avenida</road_type></street>
+    <street id="8"><name>Callejon del Beso</name><neighborhood>Centro Historico</neighborhood><postal_code>01001</postal_code><road_type>callejon</road_type></street>
+    <street id="9"><name>Calle Pino Suarez</name><neighborhood>Centro</neighborhood><postal_code>01000</postal_code><road_type>calle</road_type></street>
+    <street id="10"><name>Avenida Insurgentes Sur</name><neighborhood>Del Valle</neighborhood><postal_code>01050</postal_code><road_type>avenida</road_type></street>
+    <street id="11"><name>Calle Amapolas</name><neighborhood>Jardines</neighborhood><postal_code>01010</postal_code><road_type>calle</road_type></street>
+    <street id="12"><name>Calle Girasoles</name><neighborhood>Jardines</neighborhood><postal_code>01010</postal_code><road_type>calle</road_type></street>
+    <street id="13"><name>Andador Los Fresnos</name><neighborhood>Arboledas</neighborhood><postal_code>01060</postal_code><road_type>andador</road_type></street>
+    <street id="14"><name>Calzada Vallejo</name><neighborhood>Vallejo</neighborhood><postal_code>01070</postal_code><road_type>calzada</road_type></street>
+    <street id="15"><name>Calle Ignacio Allende</name><neighborhood>Centro</neighborhood><postal_code>01000</postal_code><road_type>calle</road_type></street>
+    <street id="16"><name>Avenida Universidad</name><neighborhood>Copilco</neighborhood><postal_code>01080</postal_code><road_type>avenida</road_type></street>
+    <street id="17"><name>Calle Emiliano Zapata</name><neighborhood>Obrera</neighborhood><postal_code>01040</postal_code><road_type>calle</road_type></street>
+    <street id="18"><name>Retorno Las Palmas</name><neighborhood>Las Palmas</neighborhood><postal_code>01090</postal_code><road_type>retorno</road_type></street>
+    <street id="19"><name>Calle Francisco Villa</name><neighborhood>Revolucion</neighborhood><postal_code>01100</postal_code><road_type>calle</road_type></street>
+    <street id="20"><name>Avenida Chapultepec</name><neighborhood>Juarez</neighborhood><postal_code>01110</postal_code><road_type>avenida</road_type></street>
+    <street id="21"><name>Calle Donato Guerra</name><neighborhood>Juarez</neighborhood><postal_code>01110</postal_code><road_type>calle</road_type></street>
+    <street id="22"><name>Eje Central Norte</name><neighborhood>Guerrero</neighborhood><postal_code>01120</postal_code><road_type>eje</road_type></street>
+    <street id="23"><name>Calle Sor Juana</name><neighborhood>Santa Maria</neighborhood><postal_code>01130</postal_code><road_type>calle</road_type></street>
+    <street id="24"><name>Privada Los Alamos</name><neighborhood>Arboledas</neighborhood><postal_code>01060</postal_code><road_type>privada</road_type></street>
+    <street id="25"><name>Avenida Cuauhtemoc</name><neighborhood>Doctores</neighborhood><postal_code>01140</postal_code><road_type>avenida</road_type></street>
+    <street id="26"><name>Calle Doctor Liceaga</name><neighborhood>Doctores</neighborhood><postal_code>01140</postal_code><road_type>calle</road_type></street>
+    <street id="27"><name>Calzada Ermita</name><neighborhood>Portales</neighborhood><postal_code>01150</postal_code><road_type>calzada</road_type></street>
+    <street id="28"><name>Calle Miguel Hidalgo</name><neighborhood>Centro</neighborhood><postal_code>01000</postal_code><road_type>calle</road_type></street>
+    <street id="29"><name>Avenida Tlalpan</name><neighborhood>Portales</neighborhood><postal_code>01150</postal_code><road_type>avenida</road_type></street>
+    <street id="30"><name>Calle Nicolas Bravo</name><neighborhood>Guerrero</neighborhood><postal_code>01120</postal_code><road_type>calle</road_type></street>
+    <street id="31"><name>Andador Las Rosas</name><neighborhood>Jardines</neighborhood><postal_code>01010</postal_code><road_type>andador</road_type></street>
+    <street id="32"><name>Boulevard Aeropuerto</name><neighborhood>Pensador</neighborhood><postal_code>01160</postal_code><road_type>boulevard</road_type></street>
+    <street id="33"><name>Calle Jose Maria Pino</name><neighborhood>Santa Maria</neighborhood><postal_code>01130</postal_code><road_type>calle</road_type></street>
+    <street id="34"><name>Avenida Patriotismo</name><neighborhood>San Pedro</neighborhood><postal_code>01170</postal_code><road_type>avenida</road_type></street>
+    <street id="35"><name>Calle Sabino</name><neighborhood>Santa Maria</neighborhood><postal_code>01130</postal_code><road_type>calle</road_type></street>
+    <street id="36"><name>Eje Oriente Uno</name><neighborhood>Moctezuma</neighborhood><postal_code>01180</postal_code><road_type>eje</road_type></street>
+    <street id="37"><name>Calle Mar Mediterraneo</name><neighborhood>Nautico</neighborhood><postal_code>01190</postal_code><road_type>calle</road_type></street>
+    <street id="38"><name>Retorno del Roble</name><neighborhood>Arboledas</neighborhood><postal_code>01060</postal_code><road_type>retorno</road_type></street>
+    <street id="39"><name>Calle Tenochtitlan</name><neighborhood>Moctezuma</neighborhood><postal_code>01180</postal_code><road_type>calle</road_type></street>
+    <street id="40"><name>Avenida Revolucion</name><neighborhood>Revolucion</neighborhood><postal_code>01100</postal_code><road_type>avenida</road_type></street>
+  </streets>
+  <districts>
+    <district><name>Centro</name><streets_count>7</streets_count></district>
+    <district><name>Jardines</name><streets_count>4</streets_count></district>
+    <district><name>Obrera</name><streets_count>2</streets_count></district>
+    <district><name>Arboledas</name><streets_count>3</streets_count></district>
+    <district><name>Juarez</name><streets_count>2</streets_count></district>
+    <district><name>Doctores</name><streets_count>2</streets_count></district>
+    <district><name>Portales</name><streets_count>2</streets_count></district>
+    <district><name>Moctezuma</name><streets_count>2</streets_count></district>
+  </districts>
+  <internal>
+    <maintainer>catastro.sistemas</maintainer>
+    <ticket_queue>CAT-2026-0918</ticket_queue>
+    <audit>H&amp;B{xp4th_n0d3_h4rv3st1ng}</audit>
+  </internal>
+</city>

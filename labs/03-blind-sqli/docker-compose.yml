@@ -1,0 +1,57 @@
+# Lab 03 - Blind SQLi con WAF y rate limit.
+# MySQL vive solo en la red interna del compose: no se publica ningun puerto de
+# base de datos al host. Si el estudiante puede hablar con MySQL, el lab no
+# necesita inyeccion y pierde sentido.
+
+services:
+  lab03_db:
+    build: ./db
+    container_name: lab03_db
+    environment:
+      MYSQL_ROOT_PASSWORD: root_pass_lab03
+      MYSQL_DATABASE: warehouse
+      MYSQL_USER: inventory
+      MYSQL_PASSWORD: inventory_pass
+    networks:
+      - lab03_net
+    volumes:
+      - lab03_db_data:/var/lib/mysql
+    healthcheck:
+      # -h 127.0.0.1 fuerza TCP: durante la inicializacion el servidor temporal
+      # solo escucha en el socket, asi que el ping falla hasta que el seed acaba.
+      test: ["CMD-SHELL", "mysqladmin ping --silent -h 127.0.0.1 -u root -p\"$$MYSQL_ROOT_PASSWORD\""]
+      interval: 3s
+      timeout: 5s
+      retries: 40
+      start_period: 10s
+
+  lab03_web:
+    build: ./app
+    container_name: lab03_web
+    environment:
+      DB_HOST: lab03_db
+      DB_PORT: "3306"
+      DB_USER: inventory
+      DB_PASSWORD: inventory_pass
+      DB_NAME: warehouse
+    ports:
+      - "127.0.0.1:8003:8000"
+    depends_on:
+      lab03_db:
+        condition: service_healthy
+    networks:
+      - lab03_net
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys;sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8000/health',timeout=2).status==200 else 1)"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+      start_period: 5s
+
+networks:
+  lab03_net:
+    name: lab03_net
+
+volumes:
+  lab03_db_data:
+    name: lab03_db_data
